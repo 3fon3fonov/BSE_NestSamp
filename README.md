@@ -14,25 +14,27 @@ This project implements **Binary Star Evolution (BSE)** simulations using the **
 To run the project, install the following dependencies:
 
 ```bash
-pip install numpy scipy matplotlib emcee corner dynesty dill
+pip install numpy scipy matplotlib emcee corner dill
 ```
+
 
 ## File Structure
 - `compute_bse_nest.py`: Main script for running BSE and nested sampling.
-- `corner2.py`: Utility for generating corner plots.
+- `BSE`: Binary Star Evolution code (modified with respect to the original code!)
+- `dynesty_1_2`: Dynesty sampler package (modified with respect to the original code!)
 - `README.md`: This documentation.
-
+ 
 ## Usage
 Run the main script:
 
-```bash
-python compute_bse_nest.py
+```
+$ python3 compute_bse_nest.py
 ```
 
 This will execute the binary star evolution model with nested sampling and produce output files containing posterior samples and best-fit parameters.
 
 ## References
-- Hurley, J. R., Pols, O. R., & Tout, C. A. (2002). Evolution of binary stars and the effect of tides on binary populations. *Monthly Notices of the Royal Astronomical Society, 329*(4), 897-928. [doi:10.1046/j.1365-8711.2002.05038.x](https://doi.org/10.1046/j.1365-8711.2002.05038.x)
+- Hurley, J. R., Pols, O. R., & Tout, C. A. (2002). Evolution of binary stars and the effect of tides on binary populations. *Monthly Notices of the Royal Astronomical Society, 329*(4), 897-928. [doi:10.1046/j.1365-8711.2002.05038.x](https://doi.org/10.1046/j.1365-8711.2002.05038.x) (see also [https://ascl.net/1303.014](https://ascl.net/1303.014))
 - Speagle, J. S. (2020). DYNESTY: a dynamic nested sampling package for estimating Bayesian posteriors and evidences. *Monthly Notices of the Royal Astronomical Society, 493*(3), 3132-3158. [doi:10.1093/mnras/staa278](https://doi.org/10.1093/mnras/staa278)
 
 ## License
